@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>小明</title>
+    <title>About Me</title>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #00ff9d;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            text-shadow: 0 0 10px #00ff9d;
+            animation: flash 1.5s infinite;
+        }
+        @keyframes flash {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: rgba(10, 10, 10, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 157, 0.3);
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #ff6b6b;
+        }
+        .hobby-list {
+            list-style-type: none;
+            padding: 0;
+            column-count: 2;
+        }
+        .book-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .book-item {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>小明的个人主页</h1>
-    <h1>Hello ~</h1>
+    <div class="container">
+        <h1> ≡ [About Me] ≡ </h1>
+        
+        <div class="section">
+            <h2>职业：网络安全爱好者</h2>
+            <p>致力于探索数字世界的奥秘，保护网络安全，捍卫信息安全的前线战士。</p>
+            <br>
+            <h2>兴趣爱好</h2>
+            <div class="hobby-list">
+                <p>✓ 游泳</p>
+                <p>✓ 跑步</p>
+                <p>✓ 打乒乓球</p>
+                <p>✓ 看书</p>
+                <p>✓ 阅读</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>运动使我强大</h2>
+            <p>在泳池中感受水流的力量，在跑道上追逐自由，在球桌上享受思维的碰撞。</p>
+            <br>
+            <h2>阅读让我无限</h2>
+            <p>通过书籍探索未知的世界，汲取知识的力量，塑造更好的自己。</p>
+        </div>
+
+        <div class="section">
+            <h2>推荐书籍</h2>
+            <ul class="book-list">
+                <li class="book-item">✓ 《网络安全：极简入门》</li>
+                <li class="book-item">✓ 《黑客与画家》</li>
+                <li class="book-item">✓ 《未来简史》</li>
+                <li class="book-item">✓ 《百年孤独》</li>
+            </ul>
+        </div>
+
+        <div class="section" style="text-align: center;">
+            <h2>Connect With Me</h2>
+            <p>社交媒体链接</p>
+        </div>
+    </div>
 </body>
 </html>
